@@ -3,45 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
     <title>WelcomePage</title>
-    <h1 align="center" style=" margin-top: 0%;" >ABC SOLUTIONS LLC</h1>
-    <div style="margin-top: -4%; margin-left: 30%;">
-        <img src="https://picsum.photos/120/50" " alt="Logo"/>
-    </div>
-    <h2><marquee bgcolor="skyblue"><font color="purple">Welcome to the company</font></marquee></h2>
 </head>
-<hr width="600" size="5" color="grey">
+
 <body>
-    <div class="CustomerEnquiryHome" >
+
+    <div class="logo-company-name">
+        <header>
+            <div class="logo-img">
+                <img src="https://picsum.photos/120/50" " alt="Logo"/>
+            </div>
+            <h1 class="companyName" >ABC SOLUTIONS LLC</h1>
+        </header>
+    
+    </div>
+
+    <div>
+        <h2 ><marquee ><font color="purple" style="background-color: aliceblue; border-radius: 3px;padding: 1%;">
+            Welcome to the company.
+            <a href="www.phoneapp.com" alt="linktoopenphoneapp">Call us today at 123-456-7890!!</a>
+        </font></marquee></h2>
+        <hr size="10" color="#77B0AA" >
+    </div>
+    
+    <div class="CustomerFormMessageHome" >
 
     <h3>AlterBusinessConsultants LLC. Top Consulting agency for any needs.</h3>
     <p> Hurray!! you are on the right path. Dont worry! we have a perfect vendor who can get your work done. It's our responsibility for the project. What you have to do is just sit and relax. Lets us know what is your need. Our professional team will contact you with the exiciting quotations in the town.</p>
+    </div>
+    <div class="link-navigation-list">
+        <h4 style="font-style:oblique; text-decoration: underline;">Our services:</h4>
+        <ul>
+            <li><a href="www.myconstructionpageNav.com">Construction</a></li>
+            <li><a href="www.myManufacturingpageNav.com">Manufacturing</a></li>
+            <li><a href="www.myTransportpageNav.com">Transportation</a></li>
+            <li><a href="www.myFinancingpageNav.com">Financing</a></li>
+            <li><a href="www.myAutomotopageNav.com">Automotive services</a></li>
+            <li><a href="www.myInsurpageNav.com">insurance Agency</a></li>
+    
+        </ul>
+    </div>
+    
+    <div class="CustomerEnquiryFormHome" >
     <form>
     <label><b>Your email:</b></label><br>
     <input type="text" id="customerEmailenq" class="emailCustomerenq" placeholder="xyz@yahoo.com"/><br>
+    <label><b>Your Name:</b></label><br>
+    <input type="text" id="customerEmailenq" class="nameCustomerenq" placeholder="Bob"/><br>
     <label><b>Type your need:</b></label><br>
-    <input type="textarea" style="height:100px;width:500px;;" id="customerNeedenq" class="customerNeedenq" placeholder="Type your need...."/><br>
-    <button type="button" style="margin-top: 1%; margin-left:20%;  display: inline-block; padding: 10px 18px;">Submit</button>
-    <button type="button" style="margin-top: 1%; margin-left:2%;  display: inline-block; padding: 10px 18px;">Reset</button>
+    <input type="textarea" style="height:100px;width:500px;" id="customerNeedenq" class="customerNeedenq" placeholder="Type your need...."/><br>
+    <button id="submitBtn" class="button" type="button" >Submit</button>
+    <button id="resetBtn" class="button" type="button">Reset</button>
 </form>
 </div>
-<div class="ServiceNavigation">
-    <h4 style="font-style:oblique; text-decoration: underline;">Our services:</h4>
-    <ul>
-        <li><a href="www.myconstructionpageNav.com">Construction</a></li>
-        <li><a href="www.myManufacturingpageNav.com">Manufacturing</a></li>
-        <li><a href="www.myTransportpageNav.com">Transportation</a></li>
-        <li><a href="www.myFinancingpageNav.com">Financing</a></li>
-        <li><a href="www.myAutomotopageNav.com">Automotive services</a></li>
-        <li><a href="www.myInsurpageNav.com">insurance Agency</a></li>
 
-    </ul>
-</div>
-<div style="margin-left: 45%; margin-top: -29%;">
+<div class="sub-section-topic" id="acheivement-section-index">
     <h4 style=" text-decoration: underline; font-style: oblique;">Our Acheivements:</h4>
-    <p style="margin-top: -2%;"> We have acheived 5 awards in the year 2023 Annual screening competitions for our respective services. we were selected for all the nominations and also received No.1 position in construciton and Transportation services throughout the state. We also proudly contract foreign projects in various countries like Dubai, USA, Syria. You can view our Acheivements in detail in Acheivements page.<br>
+    <p> We have acheived 5 awards in the year 2023 Annual screening competitions for our respective services. we were selected for all the nominations and also received No.1 position in construciton and Transportation services throughout the state. We also proudly contract foreign projects in various countries like Dubai, USA, Syria. You can view our Acheivements in detail in Acheivements page.<br>
     <a href="www.acheivementspage.com">Click here to navigate to Acheivements page</a></p>
 </div>
 
+<div class="posterImg">
+<img class="food-img" src="./assets/images/myFood.jpeg" alt="food image"/>
+<h3> Tasty Qedoba</h3>
+<p> This is my fav food when i want to healthy</p>
+</div>
 </body>
 </html>
