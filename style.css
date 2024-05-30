@@ -16,6 +16,7 @@ hr{
 }
 .logo-img{
     display: inline-block;
+    
 }
 .logo-company-name{
     display: inline-block;
@@ -28,6 +29,12 @@ background-color: grey;
 display: inline-block;
 width: 900px;
 vertical-align: 54px;
+}
+
+@media screen and (max-width:90px){
+    .logo-company-name{
+        background-color: white;
+    }
 }
 
 a{
@@ -93,3 +100,102 @@ text-align: center;
     vertical-align: 30px;
 
 }
+
+/*-------------------------*/
+
+.flex-container{
+    display: flex;
+}
+
+.top-head-logoinfo{
+    position: fixed;
+    clear: both;
+    top: 5px;
+    width: 100%;
+}
+
+.card{
+    flex: 1;
+    height: 150px;
+
+}
+
+.first.card{
+    
+}
+
+/* @media (min-width:900px){
+    .card{
+        background-color: ;
+    }
+} */
+
+.top-head-logoinfo .first.card a .logo-img{
+    border-radius: 20%;
+    height: 60px;
+    width: 60px;
+
+}
+
+.top-head-logoinfo .first.card a{
+    text-decoration: none;
+    
+    
+}
+
+.top-head-logoinfo .first.card .logo-name{
+    display: inline-flex;
+    color: gold;
+    font-size: 20px;
+    font-weight:  bold;
+    font-family:Lucida Sans;
+    vertical-align: 20px;
+}
+
+@media(max-width:1250px){
+    .top-head-logoinfo .first.card .logo-name{
+        visibility: hidden;
+    }
+}
+
+
+.top-head-logoinfo .second.card{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+@media(max-width:950px){
+    .top-head-logoinfo .second.card {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.second.card p a {
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+@media(min-width:900px){
+.firstimg {
+    float:left;
+}
+}
+
+@media(min-width:900px){
+    .cleardiv {
+        clear:both;
+    }
+    }
+    
+
+@media(min-width:900px){
+     .secimg{
+        float:left;
+    }
+    }
+    
