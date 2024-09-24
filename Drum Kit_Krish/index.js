@@ -2,10 +2,26 @@ var alldrumbuttonslength=document.querySelectorAll(".drum").length;
 
 
 for(var i=0;i<alldrumbuttonslength;i++){
-  document.querySelectorAll(".drum")[i].addEventListener("click",playsound);
+  document.querySelectorAll(".drum")[i].addEventListener("click",function(){
+    var butn=this.innerHTML;
+      playsound(butn);
+  });
   }
-  function playsound(){
-var clickedButton=this.innerHTML;
+
+document.addEventListener("keydown",function(event){
+  playsound(event.key);
+
+});
+
+  function playsound(butn){
+
+    var activeBtn=document.querySelector("."+butn);
+      activeBtn.classList.add("pressed");
+setTimeout(function(){
+      activeBtn.classList.remove("pressed");
+},100);
+
+
 
 switch(clickedButton){
 case 'w':
