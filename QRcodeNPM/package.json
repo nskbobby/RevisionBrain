@@ -1,0 +1,20 @@
+{
+  "name": "qrcodenpm",
+  "version": "1.0.0",
+  "description": "Create qr image for user input url",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krishna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "inquirer": "^11.1.0",
+    "path": "^0.12.7",
+    "qr-image": "^3.2.0",
+    "url": "^0.11.4"
+  }
+}
